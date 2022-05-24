@@ -25,6 +25,9 @@ nav {
     border-top: 1px solid #eee;
     border-bottom:1px solid #eee;
     text-align: center;
+    position: sticky;
+    top: 10px;
+    background-color: inherit;
 }
 ul {
     list-style: none;
@@ -42,16 +45,28 @@ nav li a {
 nav li a:hover {
     color:black;
 }
+main{
+position: static;
+
+}
 main h2{
     font-family: Roboto Slab;
 }
 #author {
     color:red;
 }
-img #part1{
-    width:90%;
+main img {
+    
+    margin:auto
+    width: 600px;
     padding-left: 5%;
     padding-right: 5%;
+}
+main p {
+
+  width: 620px;
+  margin:auto;
+  text-align: left;
 }
 div.more-articles {
     border-top:1px solid #eee;
@@ -69,4 +84,51 @@ div.more-articles section {
 div.more-articles section>p {
     text-align: justify;
     padding:5px;
+}
+
+div.last-article section {
+    display: block;
+    position: relative;
+    right: 25px;
+    max-width: 650px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+div.last-article section img {
+    position:relative;
+    width:300px;
+    text-align: right;
+    
+}
+div.last-article section>p{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    width: 260px;
+    padding: 20px;
+
+}
+footer {
+    border-top: 1px solid #eee;
+    border-bottom:1px solid #eee;
+    text-align: center;
+    position: static;
+    background-color: whitesmoke;
+}
+footer ul{
+    list-style:circle;
+}
+footer ul li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:#777;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #777;
+}
+footer ul li a:hover {
+    color: red;
 }
